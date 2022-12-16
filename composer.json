@@ -1,0 +1,40 @@
+{
+    "name": "leopripos/accounting-apps",
+    "type": "project",
+    "description": "Simple accounting application",
+    "homepage": "https://github.com/leopripos/accounting-app",
+    "license": "MIT",
+    "minimum-stability": "beta",
+    "require": {
+        "php": "^7.4 || ^8.0",
+        "codeigniter4/framework": "^4.0",
+        "codeigniter4/shield": "^1.0@beta",
+        "tecnickcom/tcpdf": "^6.5",
+        "dompdf/dompdf": "^2.0",
+        "phpoffice/phpspreadsheet": "^1.25"
+    },
+    "require-dev": {
+        "fakerphp/faker": "^1.9",
+        "mikey179/vfsstream": "^1.6",
+        "phpunit/phpunit": "^9.1"
+    },
+    "suggest": {
+        "ext-fileinfo": "Improves mime type detection for files"
+    },
+    "autoload": {
+        "exclude-from-classmap": [
+            "**/Database/Migrations/**"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\Support\\": "tests/_support"
+        }
+    },
+    "scripts": {
+        "test": "phpunit"
+    },
+    "support": {
+        "forum": "https://github.com/leopripos/accounting-app"
+    }
+}
